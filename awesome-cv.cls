@@ -765,6 +765,8 @@
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{2pt}
     \renewcommand{\labelitemi}{\bullet}
+    \hyphenpenalty=10000 % Prevent hyphenation
+    \exhyphenpenalty=10000 % Prevent hyphenation after explicit hyphens
 }{%
   \end{itemize}
   \end{justify}
