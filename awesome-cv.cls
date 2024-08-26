@@ -329,7 +329,7 @@
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 
 % Defines writer's whatsapp number (optional)
-% Usage: \whatsapp{<number-with-country-code>, <number-to-display>}
+% Usage: \whatsapp{<number-with-country-code>}{<number-to-display>}
 \newcommand*{\whatsapp}[2]{\def\@whatsappNumber{#1}\def\@whatsappDisplay{#2}}
 
 % Defines writer's orcid (optional)
