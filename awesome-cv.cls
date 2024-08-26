@@ -328,6 +328,10 @@
 % Usage: \linkedin{<linked-in-nick>}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 
+% Defines writer's whatsapp number (optional)
+% Usage: \whatsapp{<number-with-country-code>}
+\newcommand*{\whatsapp}[1]{\def\@whatsapp{#1}}
+
 % Defines writer's orcid (optional)
 % Usage: \orcid{<orcid-num>}
 \newcommand*{\orcid}[1]{\def\@orcid{#1}}
@@ -553,7 +557,13 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedin\acvHeaderIconSep\@linkedin}%
+          \href{htts://www.linkedin.com/ipn/\@linkedin}{\faLinkedin\acvHeaderIconSep\@linkedin}%
+        }%
+      \ifthenelse{\isundefined{\@whatsapp}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \href{https://wa.me/\@whatsapp}{\faWhatsappSquare\acvHeaderIconSep\@whatsapp}%
         }%
       \ifthenelse{\isundefined{\@orcid}}%
         {}%
